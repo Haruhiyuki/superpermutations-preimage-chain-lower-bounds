@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "claim_boundary": "finite exact audit; no arbitrary-k lower bound claimed",
+  "generalized_macro_audit": {
+    "k_min": 6,
+    "k_max": 24,
+    "condition": "2 <= delta <= f <= k-4",
+    "instances": 1330,
+    "result": "unique support-disjoint same-type exact-W3 successor in every instance"
+  },
+  "exact_bridge_macro_packings": [
+    {
+      "k": 7,
+      "rotation_classes": 720,
+      "macro_classes": 88,
+      "distinct_labelled_macro_supports": 1260,
+      "trivial_capacity": 8,
+      "exact_max_packing": 6,
+      "covered_classes": 528,
+      "uncovered_classes": 192,
+      "branch_and_bound_nodes": 2430
+    },
+    {
+      "k": 8,
+      "rotation_classes": 5040,
+      "macro_classes": 330,
+      "distinct_labelled_macro_supports": 4032,
+      "trivial_capacity": 15,
+      "exact_max_packing": 12,
+      "covered_classes": 3960,
+      "uncovered_classes": 1080,
+      "branch_and_bound_nodes": 939
+    }
+  ],
+  "k9_fixed_marker_construction": {
+    "k": 9,
+    "rotation_classes": 40320,
+    "macro_classes": 690,
+    "fixed_marker_macro_supports": 2688,
+    "trivial_capacity": 58,
+    "certified_packing_lower_bound": 24,
+    "covered_classes": 16560,
+    "uncovered_classes": 23760,
+    "exact_upper_bound_status": "not proved"
+  },
+  "bridge_orbit_audit": {
+    "k_min": 7,
+    "k_max": 24,
+    "result": "period formula, prefix support-disjointness, and return collision verified"
+  },
+  "full_report_sha256": "ff8b46562678d897511e57a082be3c93422779d8d1949fec96ee49de5d828ab1",
+  "verifier_sha256": "df7638e133e442b0e9cb7144dc41c9b806fd7c119d1bd3e48209b68de0f4cf17"
+}
