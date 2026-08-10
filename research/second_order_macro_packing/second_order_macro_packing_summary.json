@@ -49,5 +49,6 @@
     "result": "period formula, prefix support-disjointness, and return collision verified"
   },
   "full_report_sha256": "ff8b46562678d897511e57a082be3c93422779d8d1949fec96ee49de5d828ab1",
-  "verifier_sha256": "df7638e133e442b0e9cb7144dc41c9b806fd7c119d1bd3e48209b68de0f4cf17"
+  "downloadable_research_bundle_sha256": "04e571a5bf9b8f62d21f42961e028bd07885c6b5e80fb1936314bfa330f00117",
+  "verifier_git_blob_sha": "6220fee88bf465cd44468a6d0d7de37433228b58"
 }
