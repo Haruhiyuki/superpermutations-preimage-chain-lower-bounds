@@ -1,0 +1,9 @@
+.DS_Store
+.lake/
+*.olean
+*.ilean
+*.trace
+
+# 本地验证产物
+artifacts/
+*.time

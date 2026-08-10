@@ -1,0 +1,52 @@
+import PreimageChain.Parameters
+import PreimageChain.PortalCapacity
+import PreimageChain.Layerwise
+import PreimageChain.Numerics
+import PreimageChain.WeightTwo
+import PreimageChain.RotationProgress
+import PreimageChain.PreimageIdentity
+import PreimageChain.Limitations
+import PreimageChain.ChainGraph
+import PreimageChain.ChainRoutes
+import PreimageChain.EdgePartition
+import PreimageChain.ChainRouteCosts
+import PreimageChain.ComponentIdentity
+import PreimageChain.ComponentMatching
+import PreimageChain.ShortestRoutes
+import PreimageChain.ShortestRouteBridge
+import PreimageChain.PiRelaxation
+import PreimageChain.PortalAssignment
+import PreimageChain.ZeroCostRoutes
+import PreimageChain.ComponentPaths
+import PreimageChain.TerminalPortal
+import PreimageChain.ComponentGeometry
+import PreimageChain.PortalGeometry
+import PreimageChain.PortalCoordinates
+import PreimageChain.ComponentPortalChains
+import PreimageChain.ChainCapacity
+import PreimageChain.GapCapacity
+import PreimageChain.DeficitRuns
+import PreimageChain.ProfileAssembly
+import PreimageChain.PieceGapPartition
+import PreimageChain.ActualGapProfile
+import PreimageChain.GapGeometryAssembly
+import PreimageChain.FullGapRun
+import PreimageChain.FullRunExtraction
+import PreimageChain.GapRunWitnessConstruction
+import PreimageChain.MaximalRunCollision
+import PreimageChain.StandardEndpointBudget
+import PreimageChain.ActualChainCapacity
+import PreimageChain.ActualComponentCapacity
+import PreimageChain.ComponentEndpointRigidity
+import PreimageChain.ActualPrimitiveStability
+import PreimageChain.Main
+import PreimageChain.PathwiseNumerics
+import PreimageChain.PathwiseFinalCore
+import PreimageChain.SuperpermNumericalBounds
+
+/-!
+# 前像链修正与超排列新下界
+
+本文 Lean 4 形式化的统一入口。底层排列、重叠图、Hunter 变换和 Hunter–Raudvere
+定理由固定依赖 `hunter` 提供；本库形式化论文新增的证明链。
+-/

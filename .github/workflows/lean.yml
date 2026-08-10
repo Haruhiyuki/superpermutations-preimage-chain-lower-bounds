@@ -1,0 +1,48 @@
+name: Lean 4 验证
+
+# 手动执行完整构建与审计，不上传缓存或构建产物。
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: lean-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v4
+
+      - name: 安装固定 Lean 工具链
+        uses: leanprover/lean-action@v1
+        with:
+          auto-config: false
+          use-github-cache: false
+
+      - name: 获取 mathlib 构建缓存
+        run: lake exe cache get
+
+      - name: 构建完整证明与公理审计目标
+        run: lake --rehash build
+
+      - name: 单独执行公理审计
+        run: lake env lean AxiomCheck.lean
+
+      - name: 拒绝未完成证明和项目自定义公理
+        shell: bash
+        run: |
+          set -euo pipefail
+          if grep -RInE '\bsorry\b|\badmit\b|^[[:space:]]*axiom\b' \
+              --include='*.lean' \
+              --exclude-dir=.lake \
+              .; then
+            echo '发现未完成证明或项目自定义公理。' >&2
+            exit 1
+          fi

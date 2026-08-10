@@ -1,0 +1,6 @@
+.git
+.lake
+artifacts
+
+# 论文材料不参与 Lean 镜像构建
+paper/
