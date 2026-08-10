@@ -7,3 +7,5 @@ authors:
     given-names: "Xiaolong"
 version: 1.0.0
 license: CC-BY-4.0
+repository-code: "https://github.com/Haruhiyuki/superpermutations-preimage-chain-lower-bounds"
+url: "https://github.com/Haruhiyuki/superpermutations-preimage-chain-lower-bounds"

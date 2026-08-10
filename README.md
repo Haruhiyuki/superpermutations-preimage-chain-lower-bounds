@@ -36,6 +36,16 @@ theorem superperm_new_bound_closed
 | 8 | 46,118 | 13 | 6,746,523,219 |
 | 9 | 408,418 | 14 | 93,890,256,441 |
 
+## 论文
+
+- [英文版 PDF](paper/pdfs/Preimage_Chain_New_Lower_Bounds_EN_Academic_Polished.pdf)
+- [中文版 PDF](paper/pdfs/Preimage_Chain_New_Lower_Bounds_ZH_Academic_Polished.pdf)
+- [中英双语合订版 PDF](paper/pdfs/Preimage_Chain_New_Lower_Bounds_Bilingual_EN_then_ZH_Academic_Polished.pdf)
+- [形式化与确定性计算审计补充材料](anc/Preimage_Chain_New_Lower_Bounds_Supplement_v4_Lean.zip)
+
+补充材料版本为 `4.0.1-lean-formalized-release`，SHA-256 为
+`8ce335b549b5c52c4ffbbe91f1a75528ebdbd8d9e3de49d21002c32d14a0dd65`。
+
 ## 固定环境
 
 | 组件 | 固定版本 |
@@ -105,6 +115,8 @@ lake-manifest.json   完整依赖锁定清单
 Dockerfile           隔离复现环境
 VERIFICATION.md      构建、公理与占位符审计规范
 CITATION.cff         软件引用元数据
+paper/               英文、中文与双语合订论文 PDF
+anc/                 形式化证明与确定性计算审计补充材料
 ```
 
 ## 引用
@@ -114,7 +126,7 @@ CITATION.cff         软件引用元数据
 
 ## 许可证
 
-除另有说明的第三方材料外，本仓库中的原创代码与文档均
+除另有说明的第三方材料外，本仓库中的原创代码、文档与论文材料均
 采用 [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
 （CC BY 4.0）许可。版权所有 © 2026 Xiaolong Liu。完整条款见 [`LICENSE`](LICENSE)。
 
