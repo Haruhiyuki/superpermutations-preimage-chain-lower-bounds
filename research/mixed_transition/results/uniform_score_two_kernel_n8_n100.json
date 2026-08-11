@@ -1,0 +1,36 @@
+{
+  "family": "(n-1)^(n-3) (n-3) (n-1)^4 (n-3) (n-1)^(n-3)",
+  "range_checked": [8, 100],
+  "all_self_avoiding": true,
+  "all_score_two_n_minus_two": true,
+  "representatives": [
+    {
+      "n": 8,
+      "kernel": "7777757777577777",
+      "parts": 16,
+      "covered_one_cycles": 108,
+      "score": 12
+    },
+    {
+      "n": 9,
+      "kernel": "888888688886888888",
+      "parts": 18,
+      "covered_one_cycles": 140,
+      "score": 14
+    },
+    {
+      "n": 10,
+      "kernel": "99999997999979999999",
+      "parts": 20,
+      "covered_one_cycles": 176,
+      "score": 16
+    },
+    {
+      "n": 100,
+      "parts": 200,
+      "covered_one_cycles": 19796,
+      "score": 196
+    }
+  ],
+  "note": "The finite check is supplementary; the symbolic proof in UNIFORM_SCORE_TWO_KERNEL.md covers every n >= 8."
+}
