@@ -1,0 +1,19 @@
+{
+  "status": "diagnostic_not_new_upper_bound",
+  "upstream_repository": "urdvr/superpermutation-examples",
+  "upstream_commit": "62958c6268f728828ed578a171486866b6fe4b20",
+  "certificate_path": "n8/46204-e1613d33.sprc",
+  "certificate_sha256": "4e26e069f5bfa326747aea2750e6ada03fbe93b18a4f711690201a60ff14681b",
+  "n": 8,
+  "relabelled_standard_packets": 6720,
+  "packets_already_selected_as_attachments": 3,
+  "balanced_promotions_found": 1,
+  "promoted_kernel_rows": 12,
+  "remaining_attachment_rows": 826,
+  "total_complete_rows": 838,
+  "candidate_ledger_length_if_all_weight_three_spliceable": 46203,
+  "all_weight_three_kernel_chain_exists": false,
+  "direct_cut_state_path_with_any_single_overlap_weight_exists": false,
+  "claimed_superpermutation_upper_bound": null,
+  "interpretation": "Exact coverage can be promoted, but the general splice-period barrier blocks compilation inside the complete-2-cycle forest paradigm."
+}
